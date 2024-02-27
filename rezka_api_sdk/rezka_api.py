@@ -11,12 +11,15 @@ class HTTPMethods:
 
 class RezkaAPI:
     API_URL: str = constants.API_URL
+    SSL_VERIFY_NEEDED: bool = constants.SSL_VERIFY_NEEDED
 
-    def __init__(self, api_key: str) -> None:
+    def __init__(self, api_key: str, **http_client_kwargs) -> None:
         self._http_client: httpx.AsyncClient = httpx.AsyncClient(
             headers = {
                 "Authorization": "Bearer {}".format(api_key)
-            }
+            },
+            verify = self.SSL_VERIFY_NEEDED,
+            **http_client_kwargs
         )
 
     async def _request(self, http_method: str, method: str, params: dict | None=None, json: dict | None=None, **kwargs) -> dict:
