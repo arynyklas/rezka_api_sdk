@@ -3,4 +3,4 @@ from .rezka_api import RezkaAPI  # noqa
 from .exceptions import RezkaAPIException  # noqa
 
 
-__version__ = "0.0.1.post0"
+__version__ = "0.0.1.post1"

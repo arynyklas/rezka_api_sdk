@@ -3,7 +3,7 @@
 [![PyPI Version](https://img.shields.io/pypi/v/rezka_api_sdk.svg)](https://pypi.org/project/rezka_api_sdk/)
 [![Python Version](https://img.shields.io/pypi/pyversions/rezka_api_sdk.svg)](https://pypi.org/project/rezka_api_sdk/)
 
-SDK for unofficial Rezka API
+SDK for unofficial Rezka API.
 Details about API [at Telegram](https://t.me/aryn_dev/138)
 
 
