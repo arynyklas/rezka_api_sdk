@@ -1,0 +1,7 @@
+dist/
+build/
+**egg**
+**__**
+**test**
+!example.py
+!__init__.py
