@@ -62,4 +62,5 @@ class DirectURLsModel(BaseModel):
     episodes: dict[str, dict[str, str]] | None
     urls: dict[str, str] | None
     subtitles: dict[str, str] | None
+    subtitle_languages: dict[str, str] | None
     is_film: bool
