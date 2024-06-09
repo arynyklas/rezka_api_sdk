@@ -40,6 +40,7 @@ class ShortInfoModel(BaseModel):
         exclude = True
     )
 
+    is_film: bool
     title: str
     original_title: str | None
     age: str | None
