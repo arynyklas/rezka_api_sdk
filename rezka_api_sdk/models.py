@@ -40,7 +40,7 @@ class ShortInfoModel(BaseModel):
         exclude = True
     )
 
-    is_film: bool
+    is_film: bool | None
     title: str
     original_title: str | None
     age: str | None
@@ -64,4 +64,3 @@ class DirectURLsModel(BaseModel):
     urls: dict[str, str] | None
     subtitles: dict[str, str] | None
     subtitle_languages: dict[str, str] | None
-    is_film: bool
