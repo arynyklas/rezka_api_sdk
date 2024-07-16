@@ -37,12 +37,14 @@ class ShortInfoModel(BaseModel):
             "director",
             "genre"
         ],
-        exclude = True
+        exclude = True,
+        repr = False
     )
 
     is_film: bool | None
     title: str
     original_title: str | None
+    description: str | None
     age: str | None
     ratings: list[ShortInfoRatingModel]
     slogan: str | None
@@ -50,6 +52,7 @@ class ShortInfoModel(BaseModel):
     country: str | None
     director: str | None
     genre: str | None
+    cast_of_actors: list[str]
 
 
 class TranslatorInfoModel(BaseModel):

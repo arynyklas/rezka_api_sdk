@@ -31,7 +31,7 @@ await rezka_api.get_me()
 await rezka_api.search("Top Gun: Maverick")
 
 # Get short info about item and available translators, returns `tuple[ShortInfoModel, list[TranslatorInfoModel]]`
-await rezka_api.get_info_and_translators("Top Gun: Maverick")
+await rezka_api.get_info_and_translators("http://hdrezka1tqbbd.org/films/action/47946-top-gan-meverik-2022.html")
 
 
 # Get direct urls
