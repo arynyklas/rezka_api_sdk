@@ -117,8 +117,14 @@ class RezkaAPI:
             raise ValueError("Needed to pass item's id or url")
 
         if not is_film:
-            request_data["season_id"] = season_id
-            request_data["episode_id"] = episode_id
+            if season_id:
+                request_data["season_id"] = season_id
+
+            if episode_id:
+                if not season_id:
+                    raise ValueError("Needed to pass season_id with episode_id")
+
+                request_data["episode_id"] = episode_id
 
         response_data: dict = await self._request(
             http_method = HTTPMethods.POST,
