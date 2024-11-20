@@ -44,6 +44,7 @@ class ShortInfoModel(BaseModel):
     is_film: bool | None
     title: str
     original_title: str | None
+    is_finished: bool | None
     description: str | None
     age: str | None
     ratings: list[ShortInfoRatingModel]
