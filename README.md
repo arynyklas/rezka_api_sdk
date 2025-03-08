@@ -63,7 +63,7 @@ await rezka_api.get_direct_urls(
 )
 ```
 
-For user-friendly cli see [cli.py](cli.py).
+For user-friendly CLI example see [cli_example.py](cli_example.py).
 
 
 ## Stay updated

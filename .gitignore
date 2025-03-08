@@ -3,5 +3,7 @@ build/
 **egg**
 **__**
 **test**
+*.lock
+
 !example.py
 !__init__.py

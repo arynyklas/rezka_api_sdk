@@ -1,6 +1,11 @@
-from . import models, constants, utils  # noqa
-from .rezka_api import RezkaAPI  # noqa
-from .exceptions import RezkaAPIException  # noqa
+from . import models, constants
+from .rezka_api import RezkaAPI
+from .exceptions import RezkaAPIException
 
 
-__version__ = "0.0.1.post8"
+__all__ = [
+    "models",
+    "constants",
+    "RezkaAPI",
+    "RezkaAPIException"
+]

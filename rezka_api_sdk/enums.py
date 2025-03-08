@@ -1,8 +1,11 @@
 from enum import Enum as _Enum, auto as enum_auto
 
+import typing
+
 
 class BaseEnum(str, _Enum):
-    def _generate_next_value_(name: str, *_):
+    @staticmethod
+    def _generate_next_value_(name: str, start: int, count: int, last_values: list[typing.Any]) -> str:
         return name.lower()
 
 
